@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*mobile 500px*/
+header{
+    background-image: linear-gradient(to right, rgb(0,97,112), rgb(50,67,78));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas', sans-serif;
+    font-size: 60px;
+    width: 200px;
+    text-align: center;
+    /*letter-spacing:*/
+}
+
+/*
+h1:before{
+    content: "by me"
+}*/
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    color: #68d5bb;
+}
+
+.summary{
+    background-image: linear-gradient(to right, rgb(0,97,112), rgb(50,67,78));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 200px;
+}
+
+.summary p{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    max-width: 80%;
+    line-height: 20px;
+}
+
+.summary p a{
+    display: block;
+    color: #68d5bb;
+    background-color: white;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 2px;
+} 
+
+.preamble,
+.explanation,
+.participation{
+    padding: 20px
+}
+
+.preamble h3,
+.explanation h3,
+.participation h3{
+    color: #3b40f0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.preamble p,
+.explanation p,
+.participation p{
+    color: #8e9093;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.preamble{
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.explanation{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.participation{
+    border-bottom: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.participation a{
+    text-decoration: none;
+    color: #8e9093;
+}
+
+.benefits,
+.requirements{
+    padding: 20px;
+    background-color: #662d91;
+}
+
+.benefits h3,
+.requirements h3{
+    color: #68d5bb;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.benefits p,
+.requirements p{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.requirements a{
+    text-decoration: none;
+    color: white;
+}
+.select{
+    background: linear-gradient(to right, white 50%, #f47557 10%);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 10px;
+}
+
+.design-selection{    
+    background:linear-gradient(to right, #f47557 50%, white 10%);
+    padding: 20px;
+}
+
+.design-selection nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 90px);
+    list-style-type: none;
+}
+
+.design-selection nav ul li a{
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black; 
+}
+
+.design-selection nav ul li a:first-child{
+    display: block;
+}
+
+.design-archives{
+    background-color: #68d5bb;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+}
+
+.archives{
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.design-archives nav ul li{
+    margin-top: 40px;
+}
+
+.design-archives nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.zen-resources{
+    padding: 20px;
+    border: 2px solid #9e005d;
+}
+
+.zen-resources ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 40px);
+}
+
+.zen-resources li a{
+    text-decoration: none;
+    color: #9e005d;
+}
+
+.resources{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    color: #9e005d;
+    margin-bottom: 30px;
+}
+
+footer{
+    display: flex;
+    grid-row: 9;
+    justify-content: center;
+}
+
+footer a{
+    margin: 30px 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(22, 92px);
+    }
+    
+    header{
+        grid-column: 1/3;
+        grid-row: 1/4;
+        height: auto;
+
+    }
+    
+    .summary{
+        padding-top: 10px;
+        grid-column: 1/3;
+        grid-row: 4/6;
+        height: auto;
+    }
+    
+    article{
+        overflow-y: auto;
+    }
+    .preamble{
+        grid-row: 6/9;
+        background-color: white;
+    }
+    
+    .explanation{
+        grid-column: 1/2;
+        grid-row: 9/12;
+        background-color: #3b40f0;
+    }
+    
+    .explanation h3,
+    .explanation p{
+        color: white;
+    }
+    
+    .participation{
+        grid-column: 1/2;
+        grid-row: 12/17;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .benefits{
+        grid-column: 2/3;
+        grid-row: 6/8;
+    }
+    
+    .requirements{
+        grid-column: 2/3;
+        grid-row: 8/14;
+        background-color: #68d5bb;
+    }
+    
+    .requirements h3{
+        color: #662d91;
+    }
+    
+    .sidebar{
+        display: grid;
+        grid-template-rows: repeat(9, 92px); 
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/3;
+        grid-row: 14/21;
+    }
+    
+    .design-selection{
+        grid-column: 2/3;
+        grid-row: 1/6;
+        height: auto;
+        background: #f47557;
+    }
+    
+    .design-selection h3{
+         background: linear-gradient(to right, white 50%, #fff 10%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .design-archives{
+        grid-row: 4/6;
+    }
+    
+    .zen-resources{
+        grid-column: 1/3;
+        grid-row: 6/9;
+        background: #9e005d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .zen-resources ul{
+        width: 70%;
+        max-width:700px;
+        margin: auto;
+    }
+    .resources{
+        color: white;
+    }
+    
+    .zen-resources li a{
+        color: white;
+    }
+    
+    footer{
+        grid-column: 1/3;
+        grid-row: 22;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template: repeat(16, auto);
+        background-image: url(images/background.png);
+        background-size:contain;
+    }
+
+    header{
+       /*  background: url(images/1.png), linear-gradient(to right, rgb(0,97,112), rgb(50,67,78)); */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        grid-column: 1/13;
+        align-items: flex-start;
+        padding-left: 60px;
+    }
+    header:before{
+        content: '';
+        display: block;
+        width: 500px;
+        height: 500px;
+        background-image: url(images/1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 15px;
+        top: 15px
+    }
+    
+    .summary{
+        align-items: flex-start;
+        padding-left: 60px;
+        grid-column: 1/13;
+    }
+    
+    .summary p:first-child{
+        max-width: 40%;
+        text-align: left;
+    }
+    
+    .preamble{
+        grid-column: 1/6;
+        grid-row: 6/8;
+    }
+    
+    .explanation{
+        grid-column: 1/6;
+        grid-row: 8/11;
+        border-left-style: solid;
+        background-color: white;
+    }
+    
+    .explanation h3{
+        color: #3b40f0;
+    }
+    
+    .explanation p{
+        color: #8e9093;
+    }
+    
+    .participation{
+        grid-column: 1/6;
+        grid-row: 11/15;
+    }
+    
+    .benefits{
+        grid-column: 6/11;
+        grid-row: 14/16;
+    }
+    
+    .requirements{
+        grid-column: 6/11;
+        grid-row: 16/22;
+        background-color: #662d91;
+    }
+    
+    .requirements h3{
+        color: #68d5bb;
+    }
+    
+    .sidebar{
+        grid-column: 6/13;
+        grid-row: 6;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+    .design-selection{
+        grid-column: 5/-1;
+        color: white;
+    }
+    
+    .design-selection nav ul li{
+        padding-left: 30px;
+    }
+    
+    .design-selection .select{
+        background: linear-gradient(to right, white 50%, #fff 10%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .design-selection nav ul li a{
+        color: white;
+    }
+    
+    .design-archives{
+        grid-column: 1/5;
+        grid-row: 1;
+        background: linear-gradient(to bottom, #68d5bb 50%, #9e005d 10%);
+    }
+    
+    .zen-resources{
+        grid-column: 8/-1;
+    }
+    .zen-resources ul{
+        grid-template-columns: 1fr;
+    }
+    
+    footer{
+        grid-column: 1/-1;
+        background: white;
+    }
+}
